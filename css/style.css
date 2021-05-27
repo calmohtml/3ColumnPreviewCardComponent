@@ -1,0 +1,103 @@
+@import "./variables.css";
+@import "./desktop.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--veryLightGray);
+}
+
+body,
+p,
+button {
+  font-family: var(--lexendDeca);
+  font-weight: 400;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: var(--veryLightGray);
+  font-family: var(--bigShouldersDisplay);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+p {
+  color: var(--transparentWhite);
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: var(--veryLightGray);
+  border-color: transparent;
+  margin: 2rem 0;
+  padding: 1.2rem;
+  border-radius: 6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 10% auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  padding: 3rem;
+  max-width: 19.5vw;
+  max-height: 50vh;
+}
+
+.card img {
+  margin: 1rem 0;
+}
+
+.cardOne {
+  background-color: var(--brightOrange);
+}
+
+.cardTwo {
+  background-color: var(--darkCyan);
+}
+
+.cardThree {
+  background-color: var(--veryDarkCyan);
+}
+
+.buttonOne {
+  color: var(--brightOrange);
+}
+
+.buttonTwo {
+  color: var(--darkCyan);
+}
+
+.buttonThree {
+  color: var(--veryDarkCyan);
+}
+
+.attribution {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 3840px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}
